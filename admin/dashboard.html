@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Aurum Admin | Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <h2>AURUM</h2>
+
+            <span>ADMIN</span>
+
+        </div>
+
+        <nav>
+
+            <a href="dashboard.html" class="active">
+
+                <i class="fas fa-house"></i>
+
+                Dashboard
+
+            </a>
+
+          <a href="gallery.html">
+
+    <i class="fas fa-images"></i>
+
+    Galeria
+
+</a>
+
+          <a href="services.html">
+
+    <i class="fas fa-car"></i>
+
+    Serviços
+
+</a>
+
+           <a href="plans.html">
+
+    <i class="fas fa-gem"></i>
+
+    Planos
+
+</a>
+
+<a href="faq.html">
+
+    <i class="fas fa-circle-question"></i>
+
+    FAQ
+
+</a>
+
+<a href="settings.html">
+
+    <i class="fas fa-gear"></i>
+
+    Configurações
+
+</a>
+
+        </nav>
+
+    </aside>
+
+    <!-- CONTEÚDO -->
+
+   <main class="content">
+
+    <header class="topbar">
+
+        <h1>Dashboard</h1>
+
+        <button class="btn-logout">
+
+            <i class="fas fa-right-from-bracket"></i>
+
+            Sair
+
+        </button>
+
+    </header>
+
+  <section class="dashboard-content">
+    
+
+    <div class="welcome-card">
+
+        <h2>Bem-vindo ao Aurum Admin 👋</h2>
+
+        <p>
+            Gerencie o conteúdo do seu site de forma rápida, organizada e segura.
+        </p>
+
+        
+    </div>
+        <div class="stats-grid">
+
+    <div class="stat-card">
+
+        <i class="fas fa-images"></i>
+
+        <h3>Galeria</h3>
+
+       <span id="galleryCount">0</span>
+        <small>Imagens cadastradas</small>
+
+    </div>
+    
+
+    <div class="stat-card">
+
+        <i class="fas fa-car"></i>
+
+        <h3>Serviços</h3>
+
+        <span id="servicesCount">0</span>
+
+        <small>Serviços ativos</small>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fas fa-gem"></i>
+
+        <h3>Planos</h3>
+
+      <span id="plansCount">0</span>
+
+        <small>Planos disponíveis</small>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fas fa-circle-question"></i>
+
+        <h3>FAQ</h3>
+
+        <span id="faqCount">0</span>
+
+        <small>Perguntas cadastradas</small>
+
+    </div>
+    </div>
+    <section class="activity-section">
+
+    <div class="section-header">
+
+        <h2>Últimas atividades</h2>
+
+    </div>
+
+    <div class="activity-card">
+        
+
+        <div class="activity-item">
+
+            <i class="fas fa-circle-info"></i>
+
+            <div>
+
+                <strong>Sistema iniciado</strong>
+
+                <p>O painel administrativo está pronto para uso.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</div>
+
+</section>
+
+</main>
+
+</div>
+
+<script type="module" src="js/dashboard.js"></script>
+
+</body>
+
+</html>

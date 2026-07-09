@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aurum Admin | Planos</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="gallery.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <h2>AURUM</h2>
+
+            <span>ADMIN</span>
+
+        </div>
+
+        <nav>
+
+            <a href="dashboard.html">
+
+                <i class="fas fa-house"></i>
+
+                Dashboard
+
+            </a>
+
+            <a href="gallery.html">
+
+                <i class="fas fa-images"></i>
+
+                Galeria
+
+            </a>
+
+            <a href="services.html">
+
+                <i class="fas fa-car"></i>
+
+                Serviços
+
+            </a>
+
+           <a href="plans.html" class="active">
+
+    <i class="fas fa-gem"></i>
+
+    Planos
+
+</a>
+
+            <a href="faq.html">
+
+                <i class="fas fa-circle-question"></i>
+
+                FAQ
+
+            </a>
+
+            <a href="#">
+
+                <i class="fas fa-gear"></i>
+
+                Configurações
+
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <header class="topbar">
+
+            <h1>Planos</h1>
+
+           <button class="btn-primary" id="openModal">
+
+                <i class="fas fa-plus"></i>
+
+                Novo Plano
+
+            </button>
+
+        </header>
+
+        <section class="gallery-content">
+
+         <div id="plansGrid" class="gallery-grid"></div>
+
+        </section>
+        <!-- ==========================================
+     MODAL NOVO Plano
+========================================== -->
+
+<div class="modal-overlay" id="modalOverlay">
+
+    <div class="modal">
+
+        <div class="modal-header">
+
+            <h2>Novo Plano</h2>
+
+            <button class="close-modal" id="closeModal">
+
+                <i class="fas fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <div class="modal-body">
+
+            <div class="form-group">
+
+                <label>Nome do plano</label>
+
+                <input
+                    type="text"
+                    id="planTitle"
+                    placeholder="Ex: Lavagem Premium">
+
+            </div>
+<div class="form-group">
+
+    <label>Preço</label>
+
+    <input
+        type="text"
+        id="planPrice"
+        placeholder="Ex: R$ 199,90">
+
+</div>
+    <div class="form-group">
+
+    <label>Benefícios</label>
+
+    <textarea
+        id="planBenefits"
+        rows="6"
+        placeholder="Digite um benefício por linha&#10;Ex:&#10;Lavagem técnica&#10;Aspiração completa&#10;Limpeza dos painéis"></textarea>
+
+</div>
+
+            <div class="form-group">
+
+                <label>Ordem de exibição</label>
+
+                <input
+                    type="number"
+                    id="planOrder"
+                    min="1"
+                    value="1">
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="btn-secondary"
+                    id="cancelModal">
+
+                    Cancelar
+
+                </button>
+
+                <button
+                    type="button"
+                    class="btn-primary"
+                    id="savePlan">
+
+                    Salvar plano
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    </main>
+
+</div>
+
+<script type="module" src="js/plans.js"></script>
+
+</body>
+</html>
